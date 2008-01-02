@@ -9,6 +9,7 @@ Release: %{release}
 Source0: http://www.gulu.net/xskat/%{name}-%{version}.tar.bz2
 License: GPL
 Group: Games/Cards
+BuildRoot: %{_tmppath}/%{name}-buildroot
 Url: http://www.xskat.de/xskat.html
 BuildRequires: X11-devel
 BuildRequires: rman gccmakedep
