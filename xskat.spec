@@ -42,24 +42,12 @@ Features
 %install
 rm -rf $RPM_BUILD_ROOT
 
-mkdir -p $RPM_BUILD_ROOT{%{_gamesbindir},%{_mandir}/{man1,de/man1},%{_menudir}}
 install xskat $RPM_BUILD_ROOT%{_gamesbindir}
 install xskat.man $RPM_BUILD_ROOT%{_mandir}/man1/xskat.1
 install xskat-de.man $RPM_BUILD_ROOT%{_mandir}/de/man1/xskat.1
 
 mkdir -p %buildroot%_iconsdir
 convert icon.xbm %buildroot%_iconsdir/%name.png
-(cd $RPM_BUILD_ROOT
-cat > ./%{_menudir}/%{name} <<EOF
-?package(%{name}):\
-needs="X11"\
-title="Xskat"\
-longtitle="The Skat game"\
-command="%{_gamesbindir}/%{name}"\
-section="More Applications/Games/Cards" \
-icon="cards_section.png" xdg="true"
-EOF
-)
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
@@ -86,7 +74,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_gamesbindir}/%{name}
 %_datadir/applications/mandriva*
-%{_menudir}/%{name}
 %_iconsdir/%name.png
 %{_mandir}/man1/*
 %lang(de) %{_mandir}/de/man1/*
