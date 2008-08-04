@@ -42,6 +42,7 @@ Features
 %install
 rm -rf $RPM_BUILD_ROOT
 
+mkdir -p $RPM_BUILD_ROOT{%{_gamesbindir},%{_mandir}/{man1,de/man1},%{_menudir}}
 install xskat $RPM_BUILD_ROOT%{_gamesbindir}
 install xskat.man $RPM_BUILD_ROOT%{_mandir}/man1/xskat.1
 install xskat-de.man $RPM_BUILD_ROOT%{_mandir}/de/man1/xskat.1
