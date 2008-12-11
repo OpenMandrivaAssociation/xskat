@@ -13,7 +13,7 @@ BuildRoot: %{_tmppath}/%{name}-buildroot
 Url: http://www.xskat.de/xskat.html
 BuildRequires: X11-devel
 BuildRequires: rman gccmakedep
-BuildRequires: ImageMagick
+BuildRequires: imagemagick
 BuildRequires: imake
 
 %description
