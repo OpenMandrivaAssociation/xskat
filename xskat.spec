@@ -11,7 +11,7 @@ License: GPL
 Group: Games/Cards
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Url: http://www.xskat.de/xskat.html
-BuildRequires: X11-devel
+BuildRequires: libx11-devel
 BuildRequires: rman gccmakedep
 BuildRequires: imagemagick
 BuildRequires: imake
@@ -36,7 +36,7 @@ Features
 %setup -q
 
 %build
-%configure --bindir=%_gamesbindir
+%configure2_5x --bindir=%_gamesbindir
 %make
 
 %install
