@@ -1,6 +1,6 @@
 %define name xskat 
 %define version 4.0
-%define release %mkrel 9
+%define release %mkrel 10
 
 Summary: The card game Skat as defined by the official Skat Order
 Name: %{name}
