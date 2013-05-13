@@ -1,6 +1,6 @@
 %define name xskat 
 %define version 4.0
-%define release %mkrel 10
+%define release  11
 
 Summary: The card game Skat as defined by the official Skat Order
 Name: %{name}
@@ -9,7 +9,6 @@ Release: %{release}
 Source0: http://www.gulu.net/xskat/%{name}-%{version}.tar.bz2
 License: GPL
 Group: Games/Cards
-BuildRoot: %{_tmppath}/%{name}-buildroot
 Url: http://www.xskat.de/xskat.html
 BuildRequires: pkgconfig(x11)
 BuildRequires: rman gccmakedep
