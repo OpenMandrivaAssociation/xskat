@@ -3,7 +3,7 @@
 Summary: The card game Skat as defined by the official Skat Order
 Name: xskat
 Version: 4.0
-Release: 12
+Release: 13
 Source0: http://www.gulu.net/xskat/%{name}-%{version}.tar.bz2
 Source1: http://www.xskat.de/skat_icon.png
 License: GPL
