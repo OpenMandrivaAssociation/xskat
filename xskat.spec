@@ -1,9 +1,9 @@
-%define debug_package %{nil}
+%define _empty_manifest_terminate_build 0
 
 Summary: The card game Skat as defined by the official Skat Order
 Name: xskat
 Version: 4.0
-Release: 13
+Release: 14
 Source0: http://www.gulu.net/xskat/%{name}-%{version}.tar.bz2
 Source1: http://www.xskat.de/skat_icon.png
 License: GPL
@@ -35,7 +35,7 @@ Features
 
 %build
 %configure --bindir=%_gamesbindir
-%make
+%make_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
