@@ -8,7 +8,7 @@ Source0: http://www.gulu.net/xskat/%{name}-%{version}.tar.bz2
 Source1: http://www.xskat.de/skat_icon.png
 License: GPL
 Group: Games/Cards
-Url: http://www.xskat.de/xskat.html
+Url: https://www.xskat.de/xskat.html
 BuildRequires: pkgconfig(x11)
 BuildRequires: rman gccmakedep
 BuildRequires: imagemagick
