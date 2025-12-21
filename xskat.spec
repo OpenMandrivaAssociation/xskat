@@ -9,6 +9,10 @@ Source1: http://www.xskat.de/skat_icon.png
 License: GPL
 Group: Games/Cards
 Url: https://www.xskat.de/xskat.html
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires: pkgconfig(x11)
 BuildRequires: rman gccmakedep
 BuildRequires: imagemagick
